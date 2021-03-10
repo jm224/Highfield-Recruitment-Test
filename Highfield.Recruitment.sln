@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.809.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Highfield.Recruitment.Web", "Highfield.Recruitment\Highfield.Recruitment.Web.csproj", "{698F2708-C2DF-427B-93AA-607A934A4495}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Highfield.Recruitment.Business", "Highfield.Recruitment.Business\Highfield.Recruitment.Business.csproj", "{1567DE70-CBC2-4FD8-BD88-9CA4A26233DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{698F2708-C2DF-427B-93AA-607A934A4495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{698F2708-C2DF-427B-93AA-607A934A4495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{698F2708-C2DF-427B-93AA-607A934A4495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{698F2708-C2DF-427B-93AA-607A934A4495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1567DE70-CBC2-4FD8-BD88-9CA4A26233DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1567DE70-CBC2-4FD8-BD88-9CA4A26233DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1567DE70-CBC2-4FD8-BD88-9CA4A26233DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1567DE70-CBC2-4FD8-BD88-9CA4A26233DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {180B8222-CCD0-4C2A-9D3F-65F1C8DB5274}
+	EndGlobalSection
+EndGlobal

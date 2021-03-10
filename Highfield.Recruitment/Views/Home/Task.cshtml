@@ -1,0 +1,53 @@
+﻿@using Highfield.Recruitment.Business.Users;
+@using Highfield.Recruitment.Business.Users.ResultCreators;
+@model UsersViewModel
+
+@{
+    ViewData["Title"] = "Users";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="pageBody">
+    <p>User Details</p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>DOB</th>
+                <th>Age</th>Ï
+                <th>Age Plus Twenty</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (UserAge userAge in Model.UserAges)
+            {
+                <tr>
+                    <td>@userAge.Name</td>
+                    <td>@(userAge.Email ?? "")</td>
+                    <td>@(userAge.Dob ?? "")</td>
+                    <td>@(userAge.OriginalAge.ToString() ?? "")</td>
+                    <td>@(userAge.AgePlusTwenty.ToString() ?? "")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p>Breakdown of users favourite colours</p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Colour</th>
+                <th>Frequency</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (ColourCount colourCount in Model.TopColours)
+            {
+                <tr>
+                    <td>@colourCount.Colour</td>
+                    <td>@colourCount.Count</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
